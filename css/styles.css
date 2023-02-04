@@ -6,26 +6,34 @@
     --background-ligh: #F4F4FD;
     --active-state: #404BBF;
     --primery-fond-size: 16px;
+
 }
 
 /*  */
 body {
-font-family: Roboto;
-color: var(--primery-text);
-font-size: var(--primery-fond-size);
-line-height: 1.5;
-letter-spacing: 0.02em;
+    font-family: Robotow,sans-serif;
+    color: var(--primery-text);
+    font-size: var(--primery-fond-size);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
 }
 
 /* Header */
  .logo {
     color: var(--primery-dark);
-    font-family: Raleway;
+    font-family: Raleway,sans-serif;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-decoration: none;
  }
  .logo-item {
     color: var(--brand-color);
@@ -33,33 +41,29 @@ letter-spacing: 0.02em;
  .nav-list {
     font-weight: 500;
     font-size: var(--primery-fond-size);
-    list-style-type: none;
     
  }
  .contacts-list {
     font-size: var(--primery-fond-size);
-    list-style-type: none;
-    
  }
 
- .nav-list a {
+ .link-header {
     color: var(--primery-dark);
-    text-decoration: none;
  }
  
- .contacts-list a {
+ .contacts-link{
     color: var(--primery-text);
-    text-decoration: none;
+    font-style: normal;
  }
 
- .active-link.link {
+ .active-link.link-header {
     color: var(--active-state);
  }
 
- .nav-list a:hover,
- .nav-list a:focus,
- .contacts-list a:hover,
- .contacts-list a:focus {
+ .link-header:hover,
+ .link-header:focus,
+ .contacts-link:hover,
+ .contacts-link:focus {
     color: var(--active-state);
  }
 
@@ -79,44 +83,41 @@ letter-spacing: 0.02em;
     line-height: 1.07;
     text-align: center;
  }
- .hero button {
+ .hero-button {
     background-color: var(--brand-color);
     color: #fff;
     border: none;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
  }
 
- .hero button:hover,
- .hero button:focus {
+ .hero-button:hover,
+ .hero-button:focus {
     background-color: var(--active-state);
  }
 
  /* Advantages */
 
- .fisher-section h3 {
+ .fisher-section-heading {
     color: var(--primery-dark);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     
 }
-.fisher-section ul {
-    list-style-type: none;
-}
 
 /* list-of-works */
 
-.specification-section {
+.specification-section-title {
     color: var(--primery-dark);
     font-size: 36px;
     line-height: 1.11;
     font-weight: 700;
 }
 
-.specification-section ul {
-    list-style-type: none;
-}
-
-.specification-section h2 {
+.specification-section-title {
     text-align: center;
 }
 
@@ -127,7 +128,7 @@ letter-spacing: 0.02em;
     background-color: var(--background-ligh);
 }
 
-.workers-section h2 {
+.workers-section-title {
     color: var(--primery-dark);
     font-weight: 700;
     font-size: 36px;
@@ -135,18 +136,15 @@ letter-spacing: 0.02em;
     text-align: center;
 }
 
-.workers-section h3 {
+
+.workers-section-heading {
     color: var(--primery-dark);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 }
 
-.workers-section ul {
-    list-style-type: none;
-}
-
-.workers-section li {
+.workers-section-item {
     background-color: #fff;
 }
 
@@ -155,47 +153,45 @@ letter-spacing: 0.02em;
 .footer-container {
     background-color: var(--primery-dark);
 }
-.footer-container p {
+.footer-container-subtitle {
     color: var(--secondary-buttons);
 }
 
 .logo-footer {
     color: var(--background-ligh);
-    font-family: Ralawey;
+    font-family: Raleway,sans-serif;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 /* Portfolio */
 
-.portfolio-list-button button {
+.portfolio-button {
     background-color: var(--background-ligh);
     color: var(--brand-color);
     font-weight: 500;
     letter-spacing: 0.04em;
     border: 1px solid var(--secondary-buttons);
+    font-family: inherit;
+    cursor: pointer;
 }
 
 
-.portfolio-list-button button:hover,
-.portfolio-list-button button:focus {
+.portfolio-button:hover,
+.portfolio-button:focus {
     background-color: var(--active-state); 
     color: #fff; 
 }
 
-.portfolio-list-image h2 {
+.portfolio-heading-image {
     font-size: 20px;
     line-height: 1.2;
     color: var(--primery-dark);
 }
 
-.portfolio-list-button,
-.portfolio-list-image {
-    list-style-type: none;
-}
+
 
 
 
