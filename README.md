@@ -1,1 +1,1 @@
-https://zubaha.github.io/goit-markup-hw-01/
+https://zubaha.github.io/goit-markup-hw-02/
